@@ -9,8 +9,6 @@ using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Authenticators;
 
-
-//UPDATE(by id)
 namespace REST_Api_Home
 {
     public class Post
