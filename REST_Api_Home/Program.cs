@@ -56,7 +56,6 @@ namespace REST_Api_Home
             return request;
         }
 
-        //need to fix (added null parameters)
         public static RestRequest Update(Post post, int id)
         {
             RestRequest request = new RestRequest(CommentsUri + $"/{id}");
@@ -123,9 +122,6 @@ namespace REST_Api_Home
                 var response = await client.ExecuteAsync(request);
                 Console.WriteLine(response.Content);
             } while (input != 0);
-
-            // var responseBody = JsonSerializer.Deserialize<Post>(response.Content);
-
         }
 
         static Random random = new Random();
